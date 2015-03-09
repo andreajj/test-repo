@@ -12,7 +12,7 @@ List
 
 <a href="https//:www.umn.edu"</a>LINK</a>
 
-![IMAGE](image/IMG_6449.jpg)
+![IMAGE](image/IMG_6449.jpeg)
 
 *Italics*
 
