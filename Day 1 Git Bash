@@ -1,0 +1,300 @@
+$ git config --global user.name "andreajj"
+
+andrea@ANDREA-THINK ~/desktop
+$ git clone https://github.com/andreajj/test-repo.git
+Cloning into 'test-repo'...
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+Checking connectivity... done.
+
+andrea@ANDREA-THINK ~/desktop
+$ cd test-repo
+
+andrea@ANDREA-THINK ~/desktop/test-repo (master)
+$ ls
+README.md
+
+andrea@ANDREA-THINK ~/desktop/test-repo (master)
+$ touch log.md
+
+andrea@ANDREA-THINK ~/desktop/test-repo (master)
+$ open log.md
+sh.exe": open: command not found
+
+andrea@ANDREA-THINK ~/desktop/test-repo (master)
+$ open log.md
+sh.exe": open: command not found
+
+andrea@ANDREA-THINK ~/desktop/test-repo (master)
+$ pwd
+/c/Users/andrea/desktop/test-repo
+
+andrea@ANDREA-THINK ~/desktop/test-repo (master)
+$ git remote -v
+origin  https://github.com/andreajj/test-repo.git (fetch)
+origin  https://github.com/andreajj/test-repo.git (push)
+
+andrea@ANDREA-THINK ~/desktop/test-repo (master)
+$ git add --all
+
+andrea@ANDREA-THINK ~/desktop/test-repo (master)
+$ git commit -m "my first commit!"
+sh.exe": !": event not found
+
+andrea@ANDREA-THINK ~/desktop/test-repo (master)
+$ git commit -m "my first commit"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'andrea@andrea-THINK.(none)')
+
+andrea@ANDREA-THINK ~/desktop/test-repo (master)
+$ git commit -m "my first commit"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'andrea@andrea-THINK.(none)')
+
+andrea@ANDREA-THINK ~/desktop/test-repo (master)
+$ git config --global user.email "andreajj@gmail.com"
+
+andrea@ANDREA-THINK ~/desktop/test-repo (master)
+$ git config --global user.name "andreajj"
+
+andrea@ANDREA-THINK ~/desktop/test-repo (master)
+$ git commit -m "my first commit"
+[master 7fadefd] my first commit
+ 1 file changed, 23 insertions(+)
+ create mode 100644 log.md
+
+andrea@ANDREA-THINK ~/desktop/test-repo (master)
+$ git push origin master
+Username for 'https://github.com': andreajj
+Password for 'https://andreajj@github.com':
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 419 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/andreajj/test-repo.git
+   2fa6550..7fadefd  master -> master
+
+andrea@ANDREA-THINK ~/desktop/test-repo (master)
+$ git add --all
+
+andrea@ANDREA-THINK ~/desktop/test-repo (master)
+$ git commit -m "message"
+[master 775dce3] message
+ 1 file changed, 7 insertions(+)
+
+andrea@ANDREA-THINK ~/desktop/test-repo (master)
+$ git push origin master
+Username for 'https://github.com': andreajj
+Password for 'https://andreajj@github.com':
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/andreajj/test-repo.git/'
+
+andrea@ANDREA-THINK ~/desktop/test-repo (master)
+$ git push origin master
+Username for 'https://github.com': andreajj
+Password for 'https://andreajj@github.com':
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/andreajj/test-repo.git/'
+
+andrea@ANDREA-THINK ~/desktop/test-repo (master)
+$ git push origin master
+Username for 'https://github.com': andreajj
+Password for 'https://andreajj@github.com':
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 403 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+To https://github.com/andreajj/test-repo.git
+   7fadefd..775dce3  master -> master
+
+andrea@ANDREA-THINK ~/desktop/test-repo (master)
+$ open log2.md
+sh.exe": open: command not found
+
+andrea@ANDREA-THINK ~/desktop/test-repo (master)
+$ touch log2.md
+
+andrea@ANDREA-THINK ~/desktop/test-repo (master)
+$ open log2.md
+sh.exe": open: command not found
+
+andrea@ANDREA-THINK ~/desktop/test-repo (master)
+$ pwd
+/c/Users/andrea/desktop/test-repo
+
+andrea@ANDREA-THINK ~/desktop/test-repo (master)
+$ git add --all
+
+andrea@ANDREA-THINK ~/desktop/test-repo (master)
+$ git commit -m"image add"
+[master 7a57833] image add
+ 3 files changed, 1 insertion(+), 1 deletion(-)
+ create mode 100644 IMG_6449.JPG
+ create mode 100644 log2.md
+
+andrea@ANDREA-THINK ~/desktop/test-repo (master)
+$ git push origin master
+Username for 'https://github.com': andreajj
+Password for 'https://andreajj@github.com':
+Counting objects: 7, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 2.88 MiB | 855.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0)
+To https://github.com/andreajj/test-repo.git
+   775dce3..7a57833  master -> master
+
+andrea@ANDREA-THINK ~/desktop/test-repo (master)
+$ git add --all
+
+andrea@ANDREA-THINK ~/desktop/test-repo (master)
+$ git commit -m"image again"
+[master 44ecd78] image again
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename IMG_6449.JPG => image/IMG_6449.JPG (100%)
+
+andrea@ANDREA-THINK ~/desktop/test-repo (master)
+$ git push origin master
+Username for 'https://github.com': andreajj
+Password for 'https://andreajj@github.com':
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 362 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/andreajj/test-repo.git
+   7a57833..44ecd78  master -> master
+
+andrea@ANDREA-THINK ~/desktop/test-repo (master)
+$ git add --all
+
+andrea@ANDREA-THINK ~/desktop/test-repo (master)
+$ git commit -m"image again 2"
+[master c37e4cd] image again 2
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+andrea@ANDREA-THINK ~/desktop/test-repo (master)
+$ git push origin master
+Username for 'https://github.com': andreajj
+Password for 'https://andreajj@github.com':
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 355 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+To https://github.com/andreajj/test-repo.git
+   44ecd78..c37e4cd  master -> master
+
+andrea@ANDREA-THINK ~/desktop/test-repo (master)
+$ git add --all
+
+andrea@ANDREA-THINK ~/desktop/test-repo (master)
+$ git commit -m"image test 3"
+[master 55681fc] image test 3
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+andrea@ANDREA-THINK ~/desktop/test-repo (master)
+$ git push origin master
+Username for 'https://github.com': andreajj
+Password for 'https://andreajj@github.com':
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 356 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+To https://github.com/andreajj/test-repo.git
+   c37e4cd..55681fc  master -> master
+
+andrea@ANDREA-THINK ~/desktop/test-repo (master)
+$ git add --all
+
+andrea@ANDREA-THINK ~/desktop/test-repo (master)
+$ git commit -m"message"
+[master e327300] message
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+
+andrea@ANDREA-THINK ~/desktop/test-repo (master)
+$ git push origin master
+Username for 'https://github.com': andreajj
+Password for 'https://andreajj@github.com':
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 392 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+To https://github.com/andreajj/test-repo.git
+   55681fc..e327300  master -> master
+
+andrea@ANDREA-THINK ~/desktop/test-repo (master)
+$ git push origin master
+Username for 'https://github.com': andreajj
+Password for 'https://andreajj@github.com':
+Everything up-to-date
+
+andrea@ANDREA-THINK ~/desktop/test-repo (master)
+$ git add --all
+
+andrea@ANDREA-THINK ~/desktop/test-repo (master)
+$ git commit -m"screenshot image"
+[master 18133a6] screenshot image
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 image/20150309_AJSublimeCapture.PNG
+
+andrea@ANDREA-THINK ~/desktop/test-repo (master)
+$ git push origin master
+Username for 'https://github.com': andreajj
+Password for 'https://andreajj@github.com':
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.04 MiB | 283.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/andreajj/test-repo.git
+   e327300..18133a6  master -> master
+
+andrea@ANDREA-THINK ~/desktop/test-repo (master)
+$ gitclone Catalyst-2015.git
+sh.exe": gitclone: command not found
+
+andrea@ANDREA-THINK ~/desktop/test-repo (master)
+$ git clone Catalyst-2015.git
+fatal: repository 'Catalyst-2015.git' does not exist
+
+andrea@ANDREA-THINK ~/desktop/test-repo (master)
+$ git clone daley045/Catalyst-2015.git
+fatal: repository 'daley045/Catalyst-2015.git' does not exist
+
+andrea@ANDREA-THINK ~/desktop/test-repo (master)
+$ git clone https://github.com/daley045/Catalyst-2015.git
+Cloning into 'Catalyst-2015'...
+remote: Counting objects: 22, done.
+remote: Compressing objects: 100% (17/17), done.
+remote: Total 22 (delta 7), reused 16 (delta 4), pack-reused 0
+Unpacking objects: 100% (22/22), done.
+Checking connectivity... done.
+
+andrea@ANDREA-THINK ~/desktop/test-repo (master)
+$ git clone https://github.com/daley045/Catalyst-2015.git
