@@ -21,3 +21,10 @@ List
 'code'
 
 
+
+# Monday, March 9
+
+#
+
+Ideas for photogrammetry this morning were further on the spectrum of the speculative within computer vision. 
+
